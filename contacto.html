@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | SaludVida Hospital</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+```
+<nav class="navbar">
+
+    <div class="nav-content">
+
+        <a href="index.html" class="logo">
+            <img
+                src="img/logos/logo-saludvida-header.png"
+                alt="SaludVida Hospital"
+            >
+        </a>
+
+        <div class="menu">
+
+            <a href="index.html#inicio">
+                Inicio
+            </a>
+
+            <a href="index.html#noticias">
+                Noticias
+            </a>
+
+            <a href="index.html#servicios">
+                Servicios
+            </a>
+
+            <a href="index.html#nosotros">
+                Nosotros
+            </a>
+
+            <a href="contacto.html" class="active">
+                Contacto
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<section class="contact-hero">
+
+    <div>
+
+        <h1>Contáctanos</h1>
+
+        <p>
+            Estamos aquí para ayudarte.
+            Completa el formulario y nos pondremos
+            en contacto contigo.
+        </p>
+
+    </div>
+
+</section>
+
+<main class="contact-container">
+
+    <section class="contact-form-section">
+
+        <h2>Formulario de contacto</h2>
+
+        <p class="form-description">
+            Diligencia tus datos y cuéntanos cómo podemos ayudarte.
+        </p>
+
+        <form>
+
+            <label for="nombre">
+                Nombre completo <span>*</span>
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre completo"
+                required
+            >
+
+            <div class="form-row">
+
+                <div>
+
+                    <label for="documento">
+                        Tipo de documento <span>*</span>
+                    </label>
+
+                    <select id="documento" name="documento" required>
+
+                        <option value="">
+                            Selecciona una opción
+                        </option>
+
+                        <option>
+                            Cédula de ciudadanía
+                        </option>
+
+                        <option>
+                            Tarjeta de identidad
+                        </option>
+
+                        <option>
+                            Cédula de extranjería
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div>
+
+                    <label for="numero">
+                        Número de documento <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="numero"
+                        name="numero"
+                        placeholder="Número de documento"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div>
+
+                    <label for="correo">
+                        Correo electrónico <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="tucorreo@ejemplo.com"
+                        required
+                    >
+
+                </div>
+
+                <div>
+
+                    <label for="telefono">
+                        Teléfono <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="Número de teléfono"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+            <label for="ciudad">
+                Ciudad <span>*</span>
+            </label>
+
+            <select id="ciudad" name="ciudad" required>
+
+                <option value="">
+                    Selecciona una ciudad
+                </option>
+
+                <option>Bogotá</option>
+                <option>Pasto</option>
+                <option>Cali</option>
+                <option>Medellín</option>
+                <option>Barranquilla</option>
+
+            </select>
+
+            <label for="servicio">
+                Servicio de interés <span>*</span>
+            </label>
+
+            <select id="servicio" name="servicio" required>
+
+                <option value="">
+                    Selecciona un servicio
+                </option>
+
+                <option>
+                    Consulta externa
+                </option>
+
+                <option>
+                    Urgencias
+                </option>
+
+                <option>
+                    Hospitalización
+                </option>
+
+                <option>
+                    Programas de salud
+                </option>
+
+            </select>
+
+            <label>
+                Motivo del contacto <span>*</span>
+            </label>
+
+            <div class="radio-group">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="motivo"
+                        value="informacion"
+                        checked
+                    >
+                    Solicitar información
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="motivo"
+                        value="cita"
+                    >
+                    Agendar una cita
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="motivo"
+                        value="sugerencia"
+                    >
+                    Comentario o sugerencia
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="motivo"
+                        value="otro"
+                    >
+                    Otro
+                </label>
+
+            </div>
+
+            <label for="mensaje">
+                Mensaje <span>*</span>
+            </label>
+
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Escribe tu mensaje aquí..."
+                required
+            ></textarea>
+
+            <label class="check">
+
+                <input
+                    type="checkbox"
+                    name="politica"
+                    required
+                >
+
+                <span>
+                    Acepto la política de tratamiento de datos personales.
+                </span>
+
+            </label>
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </section>
+
+    <aside class="contact-info">
+
+        <h2>Información de contacto</h2>
+
+        <div class="info-item">
+
+            <img src="logo/ubicacion.svg" alt="Ubicación">
+
+            <div>
+
+                <h3>Dirección</h3>
+
+                <p>
+                    Calle 123 #45-67<br>
+                    Bogotá, Colombia
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="info-item">
+
+            <img src="logo/telefono.svg" alt="Teléfono">
+
+            <div>
+
+                <h3>Teléfono</h3>
+
+                <p>
+                    +57 601 123 4567
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="info-item">
+
+            <img src="logo/correo.svg" alt="Correo electrónico">
+
+            <div>
+
+                <h3>Correo electrónico</h3>
+
+                <p>
+                    info@saludvida.com
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="info-item">
+
+            <img src="logo/relog.svg" alt="Horario de atención">
+
+            <div>
+
+                <h3>Horario de atención</h3>
+
+                <p>
+                    Lunes a viernes<br>
+                    7:00 a.m. - 6:00 p.m.
+                </p>
+
+                <p>
+                    Sábados<br>
+                    7:00 a.m. - 12:00 m.
+                </p>
+
+            </div>
+
+        </div>
+
+        <h2 class="map-title">
+            Ubicación
+        </h2>
+
+        <div class="map">
+
+            <img
+                src="img/imagenes/maps.png"
+                alt="Mapa de ubicación de SaludVida"
+            >
+
+        </div>
+
+        <h2 class="social-title">
+            Síguenos en redes sociales
+        </h2>
+
+        <div class="contact-social">
+
+            <a href="#" aria-label="Facebook">
+                <img src="logo/facebook.svg" alt="Facebook">
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <img src="logo/instagram.svg" alt="Instagram">
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <img src="logo/linkeding.svg" alt="LinkedIn">
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                <img src="logo/youtube.svg" alt="YouTube">
+            </a>
+
+        </div>
+
+    </aside>
+
+</main>
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <img
+                src="img/logos/logo-saludvida-footer.png"
+                alt="SaludVida Hospital"
+            >
+
+            <p>
+                Trabajamos cada día para ofrecer mejor calidad
+                de vida, promoviendo la salud y el bienestar
+                de nuestra comunidad.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h4>Navegación</h4>
+
+            <a href="index.html#inicio">
+                Inicio
+            </a>
+
+            <a href="index.html#noticias">
+                Noticias
+            </a>
+
+            <a href="index.html#servicios">
+                Servicios
+            </a>
+
+            <a href="index.html#nosotros">
+                Nosotros
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h4>Servicios</h4>
+
+            <a href="index.html#servicios">
+                Consulta externa
+            </a>
+
+            <a href="index.html#servicios">
+                Urgencias
+            </a>
+
+            <a href="index.html#servicios">
+                Hospitalización
+            </a>
+
+            <a href="index.html#servicios">
+                Programas de salud
+            </a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h4>Síguenos</h4>
+
+            <div class="social">
+
+                <a href="#" aria-label="Facebook">
+                    <img src="logo/facebook.svg" alt="Facebook">
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <img src="logo/instagram.svg" alt="Instagram">
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <img src="logo/linkeding.svg" alt="LinkedIn">
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <img src="logo/youtube.svg" alt="YouTube">
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Hospital SaludVida.
+            Todos los derechos reservados.
+        </span>
+
+        <span>
+            Política de privacidad | Términos de uso
+        </span>
+
+    </div>
+
+</footer>
+```
+
+</body>
+</html>
